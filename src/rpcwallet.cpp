@@ -1269,7 +1269,7 @@ Value keypoolrefill(const Array& params, bool fHelp)
     return Value::null;
 }
 
-void ThreadCleanWalletPassphrase(void* parg)
+void ThreadTopUpKeyPool(void* parg)
 {  
     // Make this thread recognisable as the key-topping-up thread  
     RenameThread("bitcoin-key-top");  
